@@ -8,4 +8,4 @@ class RulesConfig(AppConfig):
 class AutodiscoverRulesConfig(RulesConfig):
     def ready(self):
         from django.utils.module_loading import autodiscover_modules
-        autodiscover_modules('rules')
+        autodiscover_modules('permissions')
